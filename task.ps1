@@ -8,8 +8,8 @@ $subnetAddressPrefix = "10.0.0.0/24"
 $sshKeyName = "linuxboxsshkey"
 $sshKeyPublicKey = Get-Content "~\.ssh\id_rsa.pub" -Raw
 $vmName = "matebox"
-$vmImage = "Ubuntu2404"
-$vmSize = "Standard_B2ts_v2"
+$vmImage = "Ubuntu2204"
+$vmSize = "Standard_B1s"
 
 Write-Host "Creating a resource group $resourceGroupName ..."
 New-AzResourceGroup -Name $resourceGroupName -Location $location
