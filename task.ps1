@@ -41,7 +41,6 @@ foreach ($zone in 1..2) {
         VirtualNetworkName   = $virtualNetworkName
         SecurityGroupName    = $networkSecurityGroupName
         SshKeyName           = $sshKeyName
-        PublicIpSku          = "Standard"
     }
 
     New-AzVm @vmParams
